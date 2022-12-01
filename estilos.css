@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Monserrat', sans-serif;
+}
+
+.lista{
+width: 100vw;
+height: 100vh;
+background: -webkit-linear-gradient(to right, #2278fb, #8e54e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2278fb, #6710c2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+color: aliceblue;
+justify-content: space-between;
+padding:2em;
+}
+.lista h2{
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.barra{
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display:flex;
+    width: 50%;
+    justify-content:space-around;
+}
+
+.menu li{
+    color: rgb(250, 250, 250);
+    list-style: none;
+    
+} 
+
+.menu a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+padding: 10px 20px;
+}
+
+.menu .casa{
+    color:rgb(255, 255, 255);
+    
+}
+.menu a:hover{
+    color:#000000;
+    background: linear-gradient(to right, #40c9ff, #595cff);
+    transition: ease-in .5s;
+    border-radius: 10px;
+}
+.toogle-menu{
+    /* display: none; */
+
+}
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    align-items: center;
+
+}
+
+h1{
+    
+    color:rgb(249, 247, 247);
+    font-size: 3em;
+}
+
+.download_cv{
+    padding: 10px 20px;
+    background:linear-gradient( #40c9ff, #595cff);
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 1px 3px 11px -4px ;
+    color:#000000;
+}
+
+.download_cv:hover{
+    color:#ffff;
+    background-color: rgb(0, 0, 0);
+    box-shadow: none;
+}
+
+.img-1 {
+    
+    width: 900px;
+    height:600px;
+    margin-top: -350px;
+}
+.imag-2{
+    position: absolute;
+    width: 460px;
+    height:560px;
+    z-index:1;
+    margin-left: 760px;
+    margin-top:-260px;
+    border: 10px solid white;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    color:#000000;
+    background:linear-gradient( #2278fb, #6710c2);
+}
+
+.imag-3{
+    width: 800PX;
+    height: 500px;
+    margin-top:-60px;
+    
+    
+}
+.imag-4{
+    position: absolute;
+    width: 360px;
+    height:410px;
+    z-index:1;
+    margin-left: 250px;
+    margin-top:-190px;
+    border:10px solid white;
+}
+.about-info {
+grid-column: 5/10;
+padding: 2em;
+}
+
+.about-info h2{
+font-size: 3em;
+color:ivory;
+margin-bottom:2em;
+}
+
+.about-info p{
+    margin-bottom: 2em;
+    color:ivory;
+    
+}
+
+.portafolio {
+    background: -webkit-linear-gradient(to right, #2278fb, #8e54e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2278fb, #6710c2); 
+    color:ivory;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.encabezado {
+    font-size: 2.5em;
+    justify-content: center;
+    padding:80px;
+    margin-left: 550px;
+    
+}
+
+.container{
+    display:flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin:0.5em;
+    margin-right: 50px;
+    margin-top:10px;
+    
+}
+
+.container h2{
+    font-size: 20px;
+}
+
+.tarjeta{
+    width: 300px;
+    height: 400px;
+    background-color: #127af1;
+    margin: 1.5em;
+    border-radius: 20px;
+    box-shadow: 1px 3px 11px -4px black;
+}
+
+.tarjeta-imagen1, .tarjeta-imagen2, .tarjeta-imagen3, .tarjeta-imagen4{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    border-start-end-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+.tarjeta-imagen1{
+    background-image: url(./img/React.jpg);
+}
+.tarjeta-imagen2{
+    background-image: url(./img/Clinica-odontologica.jpg);
+}
+.tarjeta-imagen3{
+    background-image: url(./img/Calculadora.jpg);
+}
+.tarjeta-imagen4{
+    background-image: url(./img/Formulario.jpg);
+}
+.tarjeta-titulo{
+    padding:20px;
+}
+
+.detalles-proyecto{
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.detalles-proyecto :hover{
+    cursor: pointer;
+}
+.contacto{
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    justify-content: center;
+    background:linear-gradient( #2278fb,#6710c2 );
+    color:ivory;
+}
+
+.contacto-seccion h2{
+    font-size: 2.0em;
+    margin-bottom: 120px;
+    margin-left: 600px;
+    justify-content: center;
+    padding: -80px;
+}
+
+.formulario h4{
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-left: 500px;
+    
+}
+input{
+    width:190px;
+    height:30px;
+}
+.form{
+    margin-left: 500px;
+    
+}
+
+textarea{
+    width:385px;
+    height:200px;
+    border-radius: 10px;
+    padding:5px;
+    background: ivory;
+}
+
+input{
+    border-radius: 10px;
+    padding: 3px;
+    background: ivory;
+}
+
+.btn-submit{
+    padding:10px 20px;
+    margin-top:30px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:ivory;
+    background: linear-gradient( #2278fb,#6710c2 );
+    width:100vw;
+    height: 100%;
+    z-index: 1;
+    
+}
+
+h6{
+    margin-left: 300px;
+    
+}
+
+.social h2{
+    font-size: 30px;
+    margin-bottom:10px;
+    margin-left:60px;
+}
+
+.social img{
+    font-size: 1em;
+    justify-content: space-between;
+    width:60px;
+    height:60px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+.social a :hover{
+    transform: translateY(-10px);
+}
+
+.btn{
+width:40px;
+height: 40px;
+display: flex;
+position: fixed;
+border-radius: 50%;
+bottom:640px;
+right:120px;
+
+}
