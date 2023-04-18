@@ -22,3 +22,6 @@ window.location.href="https://github.com/Jscm15/Clinica-Dental-Back.git"
 function boton(){
     window.location.href="#inicio "
 }
+
+
+

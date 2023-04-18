@@ -7,7 +7,9 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="./estilos.css">
     <script src="https://kit.fontawesome.com/0d010d09de.js" crossorigin="anonymous"></script>
-<!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- CSS only -->
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
 </head>
 <body>
@@ -42,23 +44,27 @@
             </a>
             
             </div>
-            <img class="imag-1" src="./img/explosion-pink-blue-powder-entrepreneurship-innovation-shutterstock-1077184466_clipdrop-background-removal.png" alt="foto1">
-            <img class="imag-2" src="./img/20221201_085657-removebg-preview2.png" alt="foto2">
-            
+            <div class="containerfoto">
+            <div class="hexagono">
+                <div class="shape">
+                    <img src="img/20221201_085609-removebg-preview.png" alt="">
+                </div>
+            </div> 
+            </div>
         </main>
     </div>
 
-<div class="portafolio" id="Portafolio">
+    <div class="portafolio" id="Portafolio">
     <div class="encabezado">
         <h2>Mi portafolio</h2>
     </div>
-        
+    
 <div class="container">
 <div class="tarjeta">
     <div class="tarjeta-imagen1">
     </div>
     <div class="tarjeta-titulo">
-        <h2>LOGIN EN REACT</h2>
+        <h2>Login en React</h2>
         <br>
         <br>
         <p>Primer proyecto de Login con react</p>
@@ -72,7 +78,7 @@
     <div class="tarjeta-imagen2">
     </div>
     <div class="tarjeta-titulo">
-        <h2> CLÍNICA DENTAL</h2>
+        <h2> Clínica Dental</h2>
         <br><br>
         <p>Proyecto de backend realizado en intelliJ Idea </p>
     </div>
@@ -85,7 +91,7 @@
     <div class="tarjeta-imagen3">
     </div>
     <div class="tarjeta-titulo">
-        <h2>CALCULADORA</h2>
+        <h2>Calculadora</h2>
         <br><br>
         <p>Este proyecto se realizó en html, css y javascript.</p>
     </div>
@@ -108,21 +114,79 @@
 
 </div>
 </div>
-
-</div>
-
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
 <div class="about" id="Certificaciones">
         
-    <div class="about-info">
+    <div class="certificaciones">
         <h2>Certificaciones</h2>
-            <p>Para obtener grandes logros, siempre hay que iniciar y no desfallecer</p>
+            
+    </div>
+
+    <div class="container">
+        <div class="tarjeta">
+            <div class="tarjeta-imagen5">
+            </div>
+            <div class="tarjeta-titulo">
+                <h2>Certified Tech Developer</h2>
+                <br>
+                <p>Carrera de Mercadolibre, Globant y Digital House. </p>
+            </div>
+            <a download href="img/Certificado Profesional Developer-ML-GL-DH.pdf">
+                <button class="descarga">Descarga Certificado</button>
+            </a>
         </div>
         
+        <div class="tarjeta">
+            <div class="tarjeta-imagen6">
+            </div>
+            <div class="tarjeta-titulo">
+                <h2>Google</h2>
+                <br><br>
+                <p>Curso Protege tu negocio: Ciberseguridad en el Teletrabajo. </p>
+                
+            </div>
+            <a download href="img/activate_certificate.pdf">
+                <button class="descarga">Descarga Certificado</button>
+            </a>
+        </div>
+        
+        
+        <div class="tarjeta">
+            <div class="tarjeta-imagen7">
+            </div>
+            <div class="tarjeta-titulo">
+                <h2>IBM-Coursera</h2>
+                <br><br>
+                <p>Introducción a las Herramientas de Ciberseguridad y Cyber
+                    Ataques. </p>
+            </div>
+            <a download href="img/Coursera-IBMIntroducción a herramientas de seguridad y ciber ataques.pdf">
+                <button class="descarga">Descarga Certificado</button>
+            </a>
+        </div>
+        
+        
+        <div class="tarjeta">
+            <div class="tarjeta-imagen5">
+            </div>
+            <div class="tarjeta-titulo">
+                <h2>Formulario Javascript</h2>
+                <br><br>
+                <p>Realizado con html,css y javascript, formulario. </p>
+            </div>
+            <a download href="img/activate_certificate.pdf">
+                <button class="descarga">Descarga Certificado</button>
+            </a>
+        </div>
     </div>
+</div>
 
 <div class="contacto" id="Contacto">
     <div class="contacto-seccion">
         <h2>Contacto</h2>
+        
     </div>
         <div class="container-contacto">
         <div class="formulario">
@@ -142,14 +206,14 @@
         
         </form>
     </div>
-    
+    <p>"Para obtener grandes logros, inicia. No pienses que hay imposibles, disfruta cada proceso y mira los resultados del esfuerzo."</p>
     </div>
 </div>
 
 <footer class="footer">
     <div class="footer-contenido">
         <h2>Sebastian Castillo</h2>
-        <h5>Fullstack Web Developer Jr. | backend Developer Jr. </h5>
+        <h5>Fullstack Web Developer | backend Developer </h5>
         <br>
         <br>
         <h6>©2023 página web | Todos los derechos reservados</h6>
@@ -166,7 +230,7 @@
         </a>
         
             <a class="btn" href="index.html">
-                <img src="./img/flecha.png" alt="flecha">
+                <img src="./img/flechas blancas.png" alt="flecha">
             </a>
         </div>
     </div>
