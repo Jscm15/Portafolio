@@ -11,7 +11,12 @@ body{
     height: auto;
     
 }
-
+.contenedor{
+    width:100%;
+    max-width: 100%;
+    margin:0;
+    overflow: hidden;
+}
 .lista{
 
     background: -webkit-linear-gradient(to right, #2278fb, #505050);  /* Chrome 10-25, Safari 5.1-6 */
@@ -65,7 +70,7 @@ body{
 
 .main{
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 70%;
     height: 105vh;
     display:grid;
     grid-template-columns:repeat(2, 1fr);
